@@ -1,0 +1,9 @@
+{
+    "mix-in":[
+        "https://github.com/genpack-artifacts/geoipsets.git"
+    ],
+    "packages":[
+        "genpack/paravirt",
+        "app-backup/borgbackup"
+    ],
+}
