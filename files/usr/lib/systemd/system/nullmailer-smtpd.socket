@@ -1,0 +1,9 @@
+[Unit]
+Description=Nullmailer SMTP socket
+
+[Socket]
+ListenStream=[::1]:25
+Accept=yes
+
+[Install]
+WantedBy=sockets.target

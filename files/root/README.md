@@ -14,14 +14,14 @@ chmod 700 /home/user/.ssh
 
 ```sh
 su - user
-borg init --encryption=repokey repo-dir-name
+borg init --encryption=repokey backup/repo-name
 ```
 
 ## create archive from remote
 
 ```sh
 cd /path/to/backup
-borg create --stats --compression lz4 user@borg-host:./repo-dir-name::archive-name .
+borg create --stats --compression lz4 user@borg-host:./repo-name::archive-name .
 ```
 
 ## get passphrase from ssh key

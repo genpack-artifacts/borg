@@ -4,6 +4,8 @@
     ],
     "packages":[
         "genpack/paravirt",
-        "app-backup/borgbackup"
+        "app-backup/borgbackup",
+        "mail-mta/nullmailer"
     ],
+    "services":["nullmailer"]
 }

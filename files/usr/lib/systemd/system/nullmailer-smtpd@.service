@@ -1,0 +1,11 @@
+[Unit]
+Description=Nullmailer SMTPD service (instance %i)
+After=nullmailer.service
+
+[Service]
+ExecStart=/usr/bin/nullmailer-smtpd
+StandardInput=socket
+User=nullmail
+Group=nullmail
+NoNewPrivileges=true
+KillMode=process
