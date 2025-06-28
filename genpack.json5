@@ -1,11 +1,11 @@
 {
     "mix-in":[
-        "https://github.com/genpack-artifacts/geoipsets.git"
+        "https://github.com/genpack-artifacts/geoipsets.git",
+        "https://github.com/genpack-artifacts/nullmailer.git"
     ],
     "packages":[
         "genpack/paravirt",
         "app-backup/borgbackup",
-        "mail-mta/nullmailer"
     ],
     "services":["nullmailer"]
 }
