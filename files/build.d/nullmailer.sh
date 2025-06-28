@@ -6,5 +6,5 @@ if [[ ! -e /var/spool/nullmailer/trigger ]]; then
 	mkfifo --mode=0660 "/var/spool/nullmailer/trigger"
 fi
 chown nullmail:nullmail /var/spool/nullmailer/{tmp,queue,failed,trigger}
-chown 770 /var/spool/nullmailer/{tmp,queue,failed}
+chmod 770 /var/spool/nullmailer/{tmp,queue,failed}
 chmod 660 /var/spool/nullmailer/trigger
