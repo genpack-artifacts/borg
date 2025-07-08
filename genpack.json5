@@ -6,6 +6,14 @@
     "packages":[
         "genpack/paravirt",
         "app-backup/borgbackup",
+        "net-analyzer/zabbix"
     ],
+    use:{
+        "net-analyzer/zabbix": "-postgres curl proxy sqlite",
+        "net-analyzer/fping": "suid"
+    },
+    license:{
+        "net-analyzer/fping": "fping"
+    },
     "services":["nullmailer"]
 }
