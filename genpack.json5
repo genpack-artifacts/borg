@@ -1,9 +1,5 @@
 {
-    "mix-in":[
-        "https://github.com/genpack-artifacts/geoipsets.git",
-        "https://github.com/genpack-artifacts/nullmailer.git"
-    ],
-    "packages":[
+    packages:[
         "genpack/paravirt",
         "app-backup/borgbackup",
         "net-analyzer/zabbix"
@@ -15,5 +11,4 @@
     license:{
         "net-analyzer/fping": "fping"
     },
-    "services":["nullmailer"]
 }
