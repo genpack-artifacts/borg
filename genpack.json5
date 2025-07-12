@@ -4,11 +4,19 @@
         "app-backup/borgbackup",
         "net-analyzer/zabbix",
         "mail-mta/nullmailer",
-        "net-firewall/geoipsets"
+        "net-firewall/geoipsets",
+        "app-backup/rdiff-backup",
+        "sys-process/iotop",
+        "app-forensics/aide",
+        "app-crypt/gocryptfs"
     ],
+    accept_keywords:{
+        "app-crypt/gocryptfs":null
+    },
     use:{
         "net-analyzer/zabbix": "-postgres curl proxy sqlite",
-        "net-analyzer/fping": "suid"
+        "net-analyzer/fping": "suid",
+        "app-forensics/aide": "mhash",
     },
     license:{
         "net-analyzer/fping": "fping"
