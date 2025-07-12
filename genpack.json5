@@ -2,7 +2,9 @@
     packages:[
         "genpack/paravirt",
         "app-backup/borgbackup",
-        "net-analyzer/zabbix"
+        "net-analyzer/zabbix",
+        "mail-mta/nullmailer",
+        "net-firewall/geoipsets"
     ],
     use:{
         "net-analyzer/zabbix": "-postgres curl proxy sqlite",
